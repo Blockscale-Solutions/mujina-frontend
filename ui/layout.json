@@ -1,0 +1,8 @@
+{
+  "platform": "bzm2-rds-mock",
+  "asics_per_board": 100,
+  "rows": 10,
+  "cols": 10,
+  "order": "logical_wire_id_within_bus",
+  "note": "Logical order, not physical position. The physical placement is not known here."
+}

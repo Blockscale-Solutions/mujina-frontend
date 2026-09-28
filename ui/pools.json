@@ -1,0 +1,931 @@
+{
+ "source": "https://github.com/mempool/mining-pools",
+ "commit": "9db63a82a46a75c6320a6aa5801afcdb35306aa7",
+ "license": "MIT",
+ "file": "pools-v2.json",
+ "generated_by": "dev/gen-pools.mjs",
+ "dropped": {
+  "no_link": 10,
+  "shared_domain": 8
+ },
+ "pools": [
+  {
+   "id": 1,
+   "name": "BlockFills",
+   "slug": "blockfills",
+   "domain": "blockfills.com"
+  },
+  {
+   "id": 2,
+   "name": "ULTIMUSPOOL",
+   "slug": "ultimuspool",
+   "domain": "ultimuspool.com"
+  },
+  {
+   "id": 3,
+   "name": "Terra Pool",
+   "slug": "terrapool",
+   "domain": "terrapool.io"
+  },
+  {
+   "id": 4,
+   "name": "Luxor",
+   "slug": "luxor",
+   "domain": "mining.luxor.tech"
+  },
+  {
+   "id": 5,
+   "name": "1THash",
+   "slug": "1thash",
+   "domain": "1thash.top"
+  },
+  {
+   "id": 6,
+   "name": "BTC.com",
+   "slug": "btccom",
+   "domain": "pool.btc.com"
+  },
+  {
+   "id": 7,
+   "name": "Bitfarms",
+   "slug": "bitfarms",
+   "domain": "bitfarms.io"
+  },
+  {
+   "id": 8,
+   "name": "Huobi.pool",
+   "slug": "huobipool",
+   "domain": "hpt.com"
+  },
+  {
+   "id": 9,
+   "name": "WAYI.CN",
+   "slug": "wayicn",
+   "domain": "easy2mine.com"
+  },
+  {
+   "id": 10,
+   "name": "CanoePool",
+   "slug": "canoepool",
+   "domain": "btc.canoepool.com"
+  },
+  {
+   "id": 11,
+   "name": "BTC.TOP",
+   "slug": "btctop",
+   "domain": "btc.top"
+  },
+  {
+   "id": 12,
+   "name": "Bitcoin.com",
+   "slug": "bitcoincom",
+   "domain": "bitcoin.com"
+  },
+  {
+   "id": 13,
+   "name": "175btc",
+   "slug": "175btc",
+   "domain": "175btc.com"
+  },
+  {
+   "id": 14,
+   "name": "GBMiners",
+   "slug": "gbminers",
+   "domain": "gbminers.com"
+  },
+  {
+   "id": 15,
+   "name": "A-XBT",
+   "slug": "axbt",
+   "domain": "a-xbt.com"
+  },
+  {
+   "id": 16,
+   "name": "ASICMiner",
+   "slug": "asicminer",
+   "domain": "asicminer.co"
+  },
+  {
+   "id": 17,
+   "name": "BitMinter",
+   "slug": "bitminter",
+   "domain": "bitminter.com"
+  },
+  {
+   "id": 18,
+   "name": "BitcoinRussia",
+   "slug": "bitcoinrussia",
+   "domain": "bitcoin-russia.ru"
+  },
+  {
+   "id": 19,
+   "name": "BTCServ",
+   "slug": "btcserv",
+   "domain": "btcserv.net"
+  },
+  {
+   "id": 20,
+   "name": "simplecoin.us",
+   "slug": "simplecoinus",
+   "domain": "simplecoin.us"
+  },
+  {
+   "id": 21,
+   "name": "BTC Guild",
+   "slug": "btcguild",
+   "domain": "btcguild.com"
+  },
+  {
+   "id": 22,
+   "name": "Eligius",
+   "slug": "eligius",
+   "domain": "eligius.st"
+  },
+  {
+   "id": 23,
+   "name": "OzCoin",
+   "slug": "ozcoin",
+   "domain": "ozcoin.net"
+  },
+  {
+   "id": 24,
+   "name": "EclipseMC",
+   "slug": "eclipsemc",
+   "domain": "eclipsemc.com"
+  },
+  {
+   "id": 25,
+   "name": "MaxBTC",
+   "slug": "maxbtc",
+   "domain": "maxbtc.com"
+  },
+  {
+   "id": 26,
+   "name": "TripleMining",
+   "slug": "triplemining",
+   "domain": "triplemining.com"
+  },
+  {
+   "id": 27,
+   "name": "CoinLab",
+   "slug": "coinlab",
+   "domain": "coinlab.com"
+  },
+  {
+   "id": 28,
+   "name": "50BTC",
+   "slug": "50btc",
+   "domain": "50btc.com"
+  },
+  {
+   "id": 29,
+   "name": "GHash.IO",
+   "slug": "ghashio",
+   "domain": "ghash.io"
+  },
+  {
+   "id": 30,
+   "name": "ST Mining Corp",
+   "slug": "stminingcorp",
+   "domain": "bitcointalk.org"
+  },
+  {
+   "id": 31,
+   "name": "Bitparking",
+   "slug": "bitparking",
+   "domain": "mmpool.bitparking.com"
+  },
+  {
+   "id": 32,
+   "name": "mmpool",
+   "slug": "mmpool",
+   "domain": "mmpool.org"
+  },
+  {
+   "id": 33,
+   "name": "Polmine",
+   "slug": "polmine",
+   "domain": "polmine.pl"
+  },
+  {
+   "id": 34,
+   "name": "KnCMiner",
+   "slug": "kncminer",
+   "domain": "portal.kncminer.com"
+  },
+  {
+   "id": 35,
+   "name": "Bitalo",
+   "slug": "bitalo",
+   "domain": "bitalo.com"
+  },
+  {
+   "id": 36,
+   "name": "F2Pool",
+   "slug": "f2pool",
+   "domain": "f2pool.com"
+  },
+  {
+   "id": 37,
+   "name": "HHTT",
+   "slug": "hhtt",
+   "domain": "hhtt.1209k.com"
+  },
+  {
+   "id": 38,
+   "name": "MegaBigPower",
+   "slug": "megabigpower",
+   "domain": "megabigpower.com"
+  },
+  {
+   "id": 39,
+   "name": "Mt Red",
+   "slug": "mtred",
+   "domain": "mtred.com"
+  },
+  {
+   "id": 40,
+   "name": "NMCbit",
+   "slug": "nmcbit",
+   "domain": "nmcbit.com"
+  },
+  {
+   "id": 41,
+   "name": "Yourbtc.net",
+   "slug": "yourbtcnet",
+   "domain": "yourbtc.net"
+  },
+  {
+   "id": 42,
+   "name": "Give Me Coins",
+   "slug": "givemecoins",
+   "domain": "give-me-coins.com"
+  },
+  {
+   "id": 43,
+   "name": "Braiins Pool",
+   "slug": "braiinspool",
+   "domain": "braiins.com"
+  },
+  {
+   "id": 44,
+   "name": "AntPool",
+   "slug": "antpool",
+   "domain": "antpool.com"
+  },
+  {
+   "id": 45,
+   "name": "MultiCoin.co",
+   "slug": "multicoinco",
+   "domain": "multicoin.co"
+  },
+  {
+   "id": 46,
+   "name": "bcpool.io",
+   "slug": "bcpoolio",
+   "domain": "bcpool.io"
+  },
+  {
+   "id": 47,
+   "name": "Cointerra",
+   "slug": "cointerra",
+   "domain": "cointerra.com"
+  },
+  {
+   "id": 48,
+   "name": "KanoPool",
+   "slug": "kanopool",
+   "domain": "kano.is"
+  },
+  {
+   "id": 49,
+   "name": "Solo CK",
+   "slug": "solock",
+   "domain": "solo.ckpool.org"
+  },
+  {
+   "id": 50,
+   "name": "CKPool",
+   "slug": "ckpool",
+   "domain": "ckpool.org"
+  },
+  {
+   "id": 51,
+   "name": "NiceHash",
+   "slug": "nicehash",
+   "domain": "nicehash.com"
+  },
+  {
+   "id": 52,
+   "name": "BitClub",
+   "slug": "bitclub",
+   "domain": "bitclubpool.com"
+  },
+  {
+   "id": 53,
+   "name": "Bitcoin Affiliate Network",
+   "slug": "bitcoinaffiliatenetwork",
+   "domain": "mining.bitcoinaffiliatenetwork.com"
+  },
+  {
+   "id": 54,
+   "name": "BTCC",
+   "slug": "btcc",
+   "domain": "pool.btcc.com"
+  },
+  {
+   "id": 55,
+   "name": "BWPool",
+   "slug": "bwpool",
+   "domain": "bwpool.net"
+  },
+  {
+   "id": 56,
+   "name": "EXX&BW",
+   "slug": "exxbw",
+   "domain": "xbtc.exx.com"
+  },
+  {
+   "id": 57,
+   "name": "Bitsolo",
+   "slug": "bitsolo",
+   "domain": "bitsolo.net"
+  },
+  {
+   "id": 58,
+   "name": "BitFury",
+   "slug": "bitfury",
+   "domain": "bitfury.com"
+  },
+  {
+   "id": 59,
+   "name": "21 Inc.",
+   "slug": "21inc",
+   "domain": "21.co"
+  },
+  {
+   "id": 60,
+   "name": "digitalBTC",
+   "slug": "digitalbtc",
+   "domain": "digitalbtc.com"
+  },
+  {
+   "id": 61,
+   "name": "8baochi",
+   "slug": "8baochi",
+   "domain": "8baochi.com"
+  },
+  {
+   "id": 62,
+   "name": "myBTCcoin Pool",
+   "slug": "mybtccoinpool",
+   "domain": "mybtccoin.com"
+  },
+  {
+   "id": 63,
+   "name": "TBDice",
+   "slug": "tbdice",
+   "domain": "tbdice.org"
+  },
+  {
+   "id": 64,
+   "name": "HASHPOOL",
+   "slug": "hashpool",
+   "domain": "hashpool.com"
+  },
+  {
+   "id": 65,
+   "name": "Nexious",
+   "slug": "nexious",
+   "domain": "nexious.com"
+  },
+  {
+   "id": 66,
+   "name": "Bravo Mining",
+   "slug": "bravomining",
+   "domain": "bravo-mining.com"
+  },
+  {
+   "id": 67,
+   "name": "HotPool",
+   "slug": "hotpool",
+   "domain": "hotpool.co"
+  },
+  {
+   "id": 68,
+   "name": "OKExPool",
+   "slug": "okexpool",
+   "domain": "okex.com"
+  },
+  {
+   "id": 69,
+   "name": "BCMonster",
+   "slug": "bcmonster",
+   "domain": "bcmonster.com"
+  },
+  {
+   "id": 70,
+   "name": "1Hash",
+   "slug": "1hash",
+   "domain": "1hash.com"
+  },
+  {
+   "id": 71,
+   "name": "Bixin",
+   "slug": "bixin",
+   "domain": "haopool.com"
+  },
+  {
+   "id": 72,
+   "name": "TATMAS Pool",
+   "slug": "tatmaspool",
+   "domain": "tmsminer.com"
+  },
+  {
+   "id": 73,
+   "name": "ViaBTC",
+   "slug": "viabtc",
+   "domain": "viabtc.com"
+  },
+  {
+   "id": 74,
+   "name": "ConnectBTC",
+   "slug": "connectbtc",
+   "domain": "connectbtc.com"
+  },
+  {
+   "id": 75,
+   "name": "BATPOOL",
+   "slug": "batpool",
+   "domain": "batpool.com"
+  },
+  {
+   "id": 76,
+   "name": "Waterhole",
+   "slug": "waterhole",
+   "domain": "btc.waterhole.io"
+  },
+  {
+   "id": 80,
+   "name": "58COIN",
+   "slug": "58coin",
+   "domain": "58coin.com"
+  },
+  {
+   "id": 81,
+   "name": "Bitcoin India",
+   "slug": "bitcoinindia",
+   "domain": "bitcoin-india.org"
+  },
+  {
+   "id": 82,
+   "name": "shawnp0wers",
+   "slug": "shawnp0wers",
+   "domain": "brainofshawn.com"
+  },
+  {
+   "id": 83,
+   "name": "PHash.IO",
+   "slug": "phashio",
+   "domain": "phash.io"
+  },
+  {
+   "id": 84,
+   "name": "RigPool",
+   "slug": "rigpool",
+   "domain": "rigpool.com"
+  },
+  {
+   "id": 85,
+   "name": "HAOZHUZHU",
+   "slug": "haozhuzhu",
+   "domain": "haozhuzhu.com"
+  },
+  {
+   "id": 86,
+   "name": "7pool",
+   "slug": "7pool",
+   "domain": "7pool.com"
+  },
+  {
+   "id": 87,
+   "name": "MiningKings",
+   "slug": "miningkings",
+   "domain": "miningkings.com"
+  },
+  {
+   "id": 88,
+   "name": "HashBX",
+   "slug": "hashbx",
+   "domain": "hashbx.io"
+  },
+  {
+   "id": 89,
+   "name": "DPOOL",
+   "slug": "dpool",
+   "domain": "dpool.top"
+  },
+  {
+   "id": 90,
+   "name": "Rawpool",
+   "slug": "rawpool",
+   "domain": "rawpool.com"
+  },
+  {
+   "id": 91,
+   "name": "haominer",
+   "slug": "haominer",
+   "domain": "haominer.com"
+  },
+  {
+   "id": 93,
+   "name": "Bitcoin-Ukraine",
+   "slug": "bitcoinukraine",
+   "domain": "bitcoin-ukraine.com.ua"
+  },
+  {
+   "id": 94,
+   "name": "Poolin",
+   "slug": "poolin",
+   "domain": "poolin.com"
+  },
+  {
+   "id": 97,
+   "name": "Sigmapool.com",
+   "slug": "sigmapoolcom",
+   "domain": "sigmapool.com"
+  },
+  {
+   "id": 98,
+   "name": "okpool.top",
+   "slug": "okpooltop",
+   "domain": "okpool.top"
+  },
+  {
+   "id": 99,
+   "name": "Hummerpool",
+   "slug": "hummerpool",
+   "domain": "hummerpool.com"
+  },
+  {
+   "id": 100,
+   "name": "Tangpool",
+   "slug": "tangpool",
+   "domain": "tangpool.com"
+  },
+  {
+   "id": 101,
+   "name": "BytePool",
+   "slug": "bytepool",
+   "domain": "bytepool.com"
+  },
+  {
+   "id": 102,
+   "name": "SpiderPool",
+   "slug": "spiderpool",
+   "domain": "spiderpool.com"
+  },
+  {
+   "id": 103,
+   "name": "NovaBlock",
+   "slug": "novablock",
+   "domain": "novablock.com"
+  },
+  {
+   "id": 104,
+   "name": "MiningCity",
+   "slug": "miningcity",
+   "domain": "miningcity.com"
+  },
+  {
+   "id": 105,
+   "name": "Binance Pool",
+   "slug": "binancepool",
+   "domain": "pool.binance.com"
+  },
+  {
+   "id": 106,
+   "name": "Minerium",
+   "slug": "minerium",
+   "domain": "minerium.com"
+  },
+  {
+   "id": 107,
+   "name": "Lubian.com",
+   "slug": "lubiancom",
+   "domain": "lubian.com"
+  },
+  {
+   "id": 108,
+   "name": "OKKONG",
+   "slug": "okkong",
+   "domain": "hash.okkong.com"
+  },
+  {
+   "id": 109,
+   "name": "AAO Pool",
+   "slug": "aaopool",
+   "domain": "btc.tmspool.top"
+  },
+  {
+   "id": 110,
+   "name": "EMCDPool",
+   "slug": "emcdpool",
+   "domain": "pool.emcd.io"
+  },
+  {
+   "id": 111,
+   "name": "Foundry USA",
+   "slug": "foundryusa",
+   "domain": "foundrydigital.com"
+  },
+  {
+   "id": 112,
+   "name": "SBI Crypto",
+   "slug": "sbicrypto",
+   "domain": "sbicrypto.com"
+  },
+  {
+   "id": 113,
+   "name": "ArkPool",
+   "slug": "arkpool",
+   "domain": "arkpool.com"
+  },
+  {
+   "id": 114,
+   "name": "PureBTC.COM",
+   "slug": "purebtccom",
+   "domain": "purebtc.com"
+  },
+  {
+   "id": 115,
+   "name": "MARA Pool",
+   "slug": "marapool",
+   "domain": "marapool.com"
+  },
+  {
+   "id": 116,
+   "name": "KuCoinPool",
+   "slug": "kucoinpool",
+   "domain": "kucoin.com"
+  },
+  {
+   "id": 118,
+   "name": "OKMINER",
+   "slug": "okminer",
+   "domain": "okminer.com"
+  },
+  {
+   "id": 119,
+   "name": "Titan",
+   "slug": "titan",
+   "domain": "titan.io"
+  },
+  {
+   "id": 120,
+   "name": "PEGA Pool",
+   "slug": "pegapool",
+   "domain": "pega-pool.com"
+  },
+  {
+   "id": 121,
+   "name": "BTC Nuggets",
+   "slug": "btcnuggets",
+   "domain": "104.197.8.250"
+  },
+  {
+   "id": 122,
+   "name": "CloudHashing",
+   "slug": "cloudhashing",
+   "domain": "cloudhashing.com"
+  },
+  {
+   "id": 123,
+   "name": "digitalX Mintsy",
+   "slug": "digitalxmintsy",
+   "domain": "mintsy.co"
+  },
+  {
+   "id": 124,
+   "name": "Telco 214",
+   "slug": "telco214",
+   "domain": "telco214.com"
+  },
+  {
+   "id": 125,
+   "name": "BTC Pool Party",
+   "slug": "btcpoolparty",
+   "domain": "btcpoolparty.com"
+  },
+  {
+   "id": 126,
+   "name": "Multipool",
+   "slug": "multipool",
+   "domain": "multipool.us"
+  },
+  {
+   "id": 127,
+   "name": "transactioncoinmining",
+   "slug": "transactioncoinmining",
+   "domain": "sha256.transactioncoinmining.com"
+  },
+  {
+   "id": 128,
+   "name": "BTCDig",
+   "slug": "btcdig",
+   "domain": "btcdig.com"
+  },
+  {
+   "id": 129,
+   "name": "Tricky's BTC Pool",
+   "slug": "trickysbtcpool",
+   "domain": "pool.wemine.uk"
+  },
+  {
+   "id": 130,
+   "name": "BTCMP",
+   "slug": "btcmp",
+   "domain": "btcmp.com"
+  },
+  {
+   "id": 131,
+   "name": "Eobot",
+   "slug": "eobot",
+   "domain": "eobot.com"
+  },
+  {
+   "id": 132,
+   "name": "UNOMP",
+   "slug": "unomp",
+   "domain": "199.115.116.7"
+  },
+  {
+   "id": 133,
+   "name": "Patels",
+   "slug": "patels",
+   "domain": "patelsminingpool.com"
+  },
+  {
+   "id": 134,
+   "name": "GoGreenLight",
+   "slug": "gogreenlight",
+   "domain": "gogreenlight.se"
+  },
+  {
+   "id": 135,
+   "name": "BitcoinIndia",
+   "slug": "bitcoinindia",
+   "domain": "pool.bitcoin-india.org"
+  },
+  {
+   "id": 136,
+   "name": "EkanemBTC",
+   "slug": "ekanembtc",
+   "domain": "ekanembtc.com"
+  },
+  {
+   "id": 137,
+   "name": "CANOE",
+   "slug": "canoe",
+   "domain": "canoepool.com"
+  },
+  {
+   "id": 140,
+   "name": "Zulupool",
+   "slug": "zulupool",
+   "domain": "beta.zulupool.com"
+  },
+  {
+   "id": 141,
+   "name": "SECPOOL",
+   "slug": "secpool",
+   "domain": "secpool.com"
+  },
+  {
+   "id": 142,
+   "name": "OCEAN",
+   "slug": "ocean",
+   "domain": "ocean.xyz"
+  },
+  {
+   "id": 143,
+   "name": "WhitePool",
+   "slug": "whitepool",
+   "domain": "whitebit.com"
+  },
+  {
+   "id": 144,
+   "name": "wiz",
+   "slug": "wiz",
+   "domain": "wiz.biz"
+  },
+  {
+   "id": 148,
+   "name": "FutureBit Apollo Solo",
+   "slug": "futurebitapollosolo",
+   "domain": "futurebit.io"
+  },
+  {
+   "id": 153,
+   "name": "Phoenix",
+   "slug": "phoenix",
+   "domain": "phoenixpool.com"
+  },
+  {
+   "id": 154,
+   "name": "Neopool",
+   "slug": "neopool",
+   "domain": "neopool.com"
+  },
+  {
+   "id": 155,
+   "name": "MaxiPool",
+   "slug": "maxipool",
+   "domain": "maxipool.org"
+  },
+  {
+   "id": 156,
+   "name": "DrDetroit",
+   "slug": "drdetroit",
+   "domain": "x.com"
+  },
+  {
+   "id": 157,
+   "name": "BitFuFuPool",
+   "slug": "bitfufupool",
+   "domain": "bitfufu.com"
+  },
+  {
+   "id": 159,
+   "name": "Mining-Dutch",
+   "slug": "miningdutch",
+   "domain": "mining-dutch.nl"
+  },
+  {
+   "id": 160,
+   "name": "Public Pool",
+   "slug": "publicpool",
+   "domain": "web.public-pool.io"
+  },
+  {
+   "id": 161,
+   "name": "Mining Squared",
+   "slug": "miningsquared",
+   "domain": "pool.bsquared.network"
+  },
+  {
+   "id": 162,
+   "name": "Innopolis Tech",
+   "slug": "innopolistech",
+   "domain": "innopolis.tech"
+  },
+  {
+   "id": 164,
+   "name": "BTCLab",
+   "slug": "btclab",
+   "domain": "btclab.dev"
+  },
+  {
+   "id": 165,
+   "name": "Parasite",
+   "slug": "parasite",
+   "domain": "parasite.space"
+  },
+  {
+   "id": 166,
+   "name": "RedRock Pool",
+   "slug": "redrockpool",
+   "domain": "redrock.pro"
+  },
+  {
+   "id": 167,
+   "name": "Est3lar",
+   "slug": "est3lar",
+   "domain": "est3lar.io"
+  },
+  {
+   "id": 168,
+   "name": "Braiins Solo",
+   "slug": "braiinssolo",
+   "domain": "solo.braiins.com"
+  },
+  {
+   "id": 169,
+   "name": "SoloPool.com",
+   "slug": "solopoolcom",
+   "domain": "solopool.com"
+  },
+  {
+   "id": 170,
+   "name": "Noderunners",
+   "slug": "noderunners",
+   "domain": "pool.noderunners.network"
+  },
+  {
+   "id": 171,
+   "name": "DMND",
+   "slug": "dmnd",
+   "domain": "dmnd.work"
+  }
+ ]
+}

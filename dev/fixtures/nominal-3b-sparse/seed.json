@@ -1,0 +1,95 @@
+{
+  "scenario": "nominal-3b-sparse",
+  "note": "Sparse fast-test scenario, real driver shape: one board object, 3 buses × 9 populated ASICs of 100 configured. Keys from types.rs @ 3f783d9.",
+  "hashrate": 12000000000000000,
+  "shares_submitted": 4200,
+  "paused": false,
+  "uptime_secs": 3600,
+  "sources": [
+    {
+      "name": "pool.invalid:3333",
+      "url": "stratum+tcp://pool.invalid:3333",
+      "difficulty": 65536
+    }
+  ],
+  "asics_per_bus": 100,
+  "asics_populated_per_bus": 9,
+  "boards": [
+    {
+      "name": "bzm2-ttyMOCK00-ttyMOCK10-ttyMOCK20",
+      "model": "BZM2",
+      "startup_path": "live_calibration",
+      "saved_operating_point_status": "pending",
+      "fans": [
+        {
+          "name": "fan0",
+          "rpm": 4200,
+          "percent": 55,
+          "target_percent": null
+        },
+        {
+          "name": "fan1",
+          "rpm": 4180,
+          "percent": 55,
+          "target_percent": null
+        },
+        {
+          "name": "fan2",
+          "rpm": 4210,
+          "percent": 56,
+          "target_percent": null
+        },
+        {
+          "name": "fan3",
+          "rpm": 4195,
+          "percent": 55,
+          "target_percent": null
+        }
+      ],
+      "buses": [
+        {
+          "tty": "ttyMOCK00",
+          "thread_name": "BZM2 UART 0",
+          "base_temp_c": 62,
+          "temp_row_delta": 0.35,
+          "temp_col_delta": 0.22,
+          "temp_noise_amp": 0.8,
+          "base_v": 0.72,
+          "v_channel_delta": 0.01,
+          "v_wire_delta": 0.0015,
+          "thread_hashrate": 4000000000000000,
+          "thread_active": true,
+          "fault_asics": {}
+        },
+        {
+          "tty": "ttyMOCK10",
+          "thread_name": "BZM2 UART 1",
+          "base_temp_c": 63.5,
+          "temp_row_delta": 0.32,
+          "temp_col_delta": 0.2,
+          "temp_noise_amp": 0.7,
+          "base_v": 0.721,
+          "v_channel_delta": 0.01,
+          "v_wire_delta": 0.0014,
+          "thread_hashrate": 4000000000000000,
+          "thread_active": true,
+          "fault_asics": {}
+        },
+        {
+          "tty": "ttyMOCK20",
+          "thread_name": "BZM2 UART 2",
+          "base_temp_c": 61.5,
+          "temp_row_delta": 0.38,
+          "temp_col_delta": 0.18,
+          "temp_noise_amp": 0.9,
+          "base_v": 0.719,
+          "v_channel_delta": 0.01,
+          "v_wire_delta": 0.0016,
+          "thread_hashrate": 4000000000000000,
+          "thread_active": true,
+          "fault_asics": {}
+        }
+      ]
+    }
+  ]
+}

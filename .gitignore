@@ -1,0 +1,7 @@
+.DS_Store
+*.log
+node_modules/
+.dev-replay/
+
+# Local-only reference material (screenshots, captures): may hold secrets or unit IDs
+refs/

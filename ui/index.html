@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="no-referrer">
+  <title>MUJINA BZM2 · live telemetry</title>
+  <link rel="icon" href="./img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./css/theme.css">
+  <link rel="stylesheet" href="./css/app.css">
+  <script src="./js/theme.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap inner">
+      <div class="brand">
+        <!-- Reckless Systems mark, linking to the bzm2-hwref site until reckless.systems exists. -->
+        <a class="brand-link" href="https://blockscale-solutions.github.io/bzm2-hwref/" target="_blank" rel="noopener noreferrer" aria-label="Reckless Systems: BZM2 hardware reference">
+          <img class="brand-logo brand-logo--on-light" src="./img/reckless-systems-logo.svg" width="36" height="36" alt="Reckless Systems"><img class="brand-logo brand-logo--on-dark" src="./img/reckless-systems-logo-on-dark.svg" width="36" height="36" alt="Reckless Systems">
+        </a>
+        <div class="brand-mark">
+          <div class="brand-wordmark">MUJINA</div>
+          <div class="brand-model">BZM2</div>
+        </div>
+        <!-- 256 Foundation mark (Mujina is a 256 Foundation project). Local copies of
+             256foundation.org/logos/256-logo-horizontal-{black,white}.png, downscaled
+             to 240 px with the background turned to transparency. -->
+        <a class="brand-256" href="https://www.256foundation.org/" target="_blank" rel="noopener noreferrer" aria-label="256 Foundation">
+          <img class="brand-256-logo brand-logo--on-light" src="./img/256-foundation-logo-on-light.png" width="72" height="30" alt="256 Foundation"><img class="brand-256-logo brand-logo--on-dark" src="./img/256-foundation-logo-on-dark.png" width="72" height="30" alt="256 Foundation">
+        </a>
+        <span class="brand-tag">live telemetry</span>
+      </div>
+      <div class="header-actions">
+        <span class="freshness-pill" data-freshness-pill data-state="lost">lost</span>
+        <div class="theme-toggle" data-theme-toggle role="group" aria-label="Theme">
+          <button type="button" data-theme-value="light" aria-pressed="false">Light</button>
+          <button type="button" data-theme-value="system" aria-pressed="true">System</button>
+          <button type="button" data-theme-value="dark" aria-pressed="false">Dark</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="safety-strip" data-safety>
+    <div class="wrap inner">
+      <div class="safety-head-row">
+        <div class="safety-headline" data-safety-headline data-sev="neutral" aria-live="polite">Connecting…</div>
+        <span class="safety-age" data-safety-age aria-hidden="true" hidden></span>
+      </div>
+      <div class="safety-chips" data-safety-chips></div>
+    </div>
+  </div>
+
+  <main class="wrap">
+    <section>
+      <div class="section-eyebrow">KPI</div>
+      <div class="kpi-row" data-kpi>
+        <div class="kpi-card">
+          <div class="kpi-label">Hashrate</div>
+          <div class="kpi-value mono" data-kpi="hashrate">—</div>
+          <div class="kpi-note" data-kpi-note="hashrate"></div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-label">Shares submitted</div>
+          <div class="kpi-value mono" data-kpi="shares">—</div>
+          <div class="kpi-note" data-kpi-note="shares"></div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-label">Accepted / rejected</div>
+          <div class="kpi-value mono" data-kpi="accept">—</div>
+          <div class="kpi-note" data-kpi-note="accept"></div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-label">Pool</div>
+          <div class="kpi-value mono" data-kpi="pool">—</div>
+          <div class="kpi-note" data-kpi-note="pool"></div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-label">Uptime</div>
+          <div class="kpi-value mono" data-kpi="uptime">—</div>
+          <div class="kpi-note" data-kpi-note="uptime"></div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-label">Power / efficiency</div>
+          <div class="kpi-value mono" data-kpi="power">—</div>
+          <div class="kpi-note" data-kpi-note="power"></div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-eyebrow">Boards</div>
+      <div class="boards-grid" data-boards>
+        <article class="board-card" data-board-card>
+          <div class="board-title">
+            <span class="board-name" data-board-name>waiting for /miner</span>
+            <span class="muted mono" data-board-model></span>
+          </div>
+          <div class="heatmap-wrap"><canvas data-heatmap aria-label="Die temperature heatmap"></canvas></div>
+          <div class="heatmap-legend" data-heatmap-legend></div>
+          <div class="board-stats">
+            <span>min <span data-die-min>—</span></span>
+            <span>mean <span data-die-mean>—</span></span>
+            <span>max <span data-die-max>—</span></span>
+            <span>spread <span data-die-spread>—</span></span>
+            <span class="board-io">inlet / outlet <span data-board-io>—</span></span>
+            <span data-die-hot></span>
+            <span data-die-cold></span>
+          </div>
+          <table class="thread-table">
+            <thead><tr><th>thread</th><th>state</th><th>hashrate</th></tr></thead>
+            <tbody data-threads></tbody>
+          </table>
+          <div class="kpi-note" data-thread-note></div>
+        </article>
+        <article class="board-card" data-board-card hidden>
+          <div class="board-title">
+            <span class="board-name" data-board-name>waiting for /miner</span>
+            <span class="muted mono" data-board-model></span>
+          </div>
+          <div class="heatmap-wrap"><canvas data-heatmap aria-label="Die temperature heatmap"></canvas></div>
+          <div class="heatmap-legend" data-heatmap-legend></div>
+          <div class="board-stats">
+            <span>min <span data-die-min>—</span></span>
+            <span>mean <span data-die-mean>—</span></span>
+            <span>max <span data-die-max>—</span></span>
+            <span>spread <span data-die-spread>—</span></span>
+            <span class="board-io">inlet / outlet <span data-board-io>—</span></span>
+            <span data-die-hot></span>
+            <span data-die-cold></span>
+          </div>
+          <table class="thread-table">
+            <thead><tr><th>thread</th><th>state</th><th>hashrate</th></tr></thead>
+            <tbody data-threads></tbody>
+          </table>
+          <div class="kpi-note" data-thread-note></div>
+        </article>
+        <article class="board-card" data-board-card hidden>
+          <div class="board-title">
+            <span class="board-name" data-board-name>waiting for /miner</span>
+            <span class="muted mono" data-board-model></span>
+          </div>
+          <div class="heatmap-wrap"><canvas data-heatmap aria-label="Die temperature heatmap"></canvas></div>
+          <div class="heatmap-legend" data-heatmap-legend></div>
+          <div class="board-stats">
+            <span>min <span data-die-min>—</span></span>
+            <span>mean <span data-die-mean>—</span></span>
+            <span>max <span data-die-max>—</span></span>
+            <span>spread <span data-die-spread>—</span></span>
+            <span class="board-io">inlet / outlet <span data-board-io>—</span></span>
+            <span data-die-hot></span>
+            <span data-die-cold></span>
+          </div>
+          <table class="thread-table">
+            <thead><tr><th>thread</th><th>state</th><th>hashrate</th></tr></thead>
+            <tbody data-threads></tbody>
+          </table>
+          <div class="kpi-note" data-thread-note></div>
+        </article>
+      </div>
+    </section>
+
+    <section data-charts>
+      <div class="section-eyebrow">Charts</div>
+      <div class="charts-toolbar">
+        <div class="window-toggle" role="group" aria-label="Chart window">
+          <button type="button" data-chart-window="1m" aria-pressed="true">1m</button>
+          <button type="button" data-chart-window="5m" aria-pressed="false">5m</button>
+          <button type="button" data-chart-window="15m" aria-pressed="false">15m</button>
+        </div>
+        <span class="muted chart-hint">Heavy series default 1m · no per-ASIC time series · ring resets on reload</span>
+      </div>
+      <div class="charts-grid">
+        <div class="chart-card">
+          <div class="chart-title">Hashrate</div>
+          <div class="chart-summary" data-chart-summary="hashrate"></div>
+          <div class="chart-canvas-wrap"><canvas data-chart="hashrate"></canvas></div>
+        </div>
+        <div class="chart-card">
+          <div class="chart-title">Die temperature and fans</div>
+          <div class="chart-summary" data-chart-summary="thermal"></div>
+          <div class="chart-canvas-wrap"><canvas data-chart="thermal" aria-label="Die temperature (left axis, °C) and fan speed (right axis, rpm)"></canvas></div>
+          <div class="chart-legend" data-chart-legend="thermal"></div>
+          <details class="chart-table">
+            <summary>fans as a table</summary>
+            <div class="fans-card" data-fans>
+              <table class="fans-table" data-fans-table>
+                <thead></thead>
+                <tbody></tbody>
+              </table>
+            </div>
+          </details>
+        </div>
+        <div class="chart-card">
+          <div class="chart-title">Efficiency, J/TH (wall-side)</div>
+          <div class="chart-summary" data-chart-summary="jth"></div>
+          <div class="chart-canvas-wrap"><canvas data-chart="jth" aria-label="J/TH over time"></canvas></div>
+        </div>
+        <div class="chart-card">
+          <div class="chart-title">Coverage</div>
+          <div class="chart-summary" data-chart-summary="coverage"></div>
+          <div class="chart-canvas-wrap"><canvas data-chart="coverage"></canvas></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" data-footer>
+    <div class="wrap inner">
+      <div class="cost-meter">
+        <span data-cost-req>—</span>
+        ·
+        <span data-cost-kb>—</span>
+        ·
+        <span data-poll-intervals></span>
+        ·
+        <span data-last-fetch></span>
+      </div>
+      <div class="credit" data-credit>Built on Mujina · GPL-3.0-or-later</div>
+    </div>
+  </footer>
+
+  <script type="module" src="./js/app.js"></script>
+</body>
+</html>

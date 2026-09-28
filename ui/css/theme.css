@@ -1,0 +1,170 @@
+/* Mujina BZM2 Device UI — one light + one dark token block (no duplicated dark).
+ * Accents match mujina stone/charcoal + orange #E86A2B / teal #1FA6A0.
+ * Green never means safety. localStorage key: mujina-theme.
+ */
+
+@font-face {
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/ubuntu-latin-400-normal.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("../fonts/ubuntu-latin-500-normal.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Orbitron";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("../fonts/orbitron-latin-600-normal.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "JetBrains Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/jetbrains-mono-latin-400-normal.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "JetBrains Mono";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("../fonts/jetbrains-mono-latin-500-normal.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+:root {
+  /* Light — editorial stone */
+  --bg: #f4f1ec;
+  --bg-elevated: #faf8f5;
+  --surface: #ffffff;
+  --ink: #1a1917;
+  --ink-soft: #3d3a36;
+  --muted: #6b665e;
+  --faint: #9a948a;
+  --line: rgba(26, 25, 23, 0.08);
+  --line-strong: rgba(26, 25, 23, 0.14);
+  --border: #d9d4cb;
+  --border-subtle: #e8e4dc;
+  --shadow: 0 1px 2px rgba(26, 25, 23, 0.04), 0 8px 24px rgba(26, 25, 23, 0.06);
+
+  --accent-warm: #E86A2B;
+  --accent-warm-soft: rgba(232, 106, 43, 0.12);
+  --accent-cool: #1FA6A0;
+  --accent-cool-soft: rgba(31, 166, 160, 0.12);
+  --accent-cool-mid: rgba(31, 166, 160, 0.22);
+  --wash-warm: rgba(232, 106, 43, 0.07);
+  --wash-cool: rgba(31, 166, 160, 0.07);
+  --nav-bg: rgba(244, 241, 236, 0.9);
+  --hover-fill: rgba(26, 25, 23, 0.06);
+
+  --st-fault: #dc2626;
+  --st-fault-text: #b91c1c;
+  --st-warn: #d97706;
+  --st-warn-text: #b45309;
+  --st-live: #3b82f6;
+  --st-live-text: #1d4ed8;
+  --st-hashing: #16a34a;
+  --st-hashing-text: #15803d;
+  --st-unknown: #9a948a;
+  --st-unknown-text: #6b665e;
+
+  --heat-cold: #3b82f6;
+  --heat-mid: #f59e0b;
+  --heat-hot: #ef4444;
+
+  --font: "Ubuntu", ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --display: "Orbitron", ui-sans-serif, system-ui, sans-serif;
+  --mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+  --radius: 14px;
+  --radius-sm: 10px;
+  --radius-pill: 999px;
+  --max: 1600px;
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+  color-scheme: light;
+}
+
+html[data-theme="dark"] {
+  color-scheme: dark;
+  --bg: #0e1114;
+  --bg-elevated: #1c2329;
+  --surface: #151a1f;
+  --ink: #d6dde3;
+  --ink-soft: #b8c2ca;
+  --muted: #7a8792;
+  --faint: #556069;
+  --line: rgba(214, 221, 227, 0.1);
+  --line-strong: rgba(214, 221, 227, 0.16);
+  --border: #2a343c;
+  --border-subtle: #222a31;
+  --shadow: 0 1px 2px rgba(0, 0, 0, 0.35), 0 8px 24px rgba(0, 0, 0, 0.45);
+
+  --accent-warm: #E86A2B;
+  --accent-warm-soft: rgba(232, 106, 43, 0.18);
+  --accent-cool: #2dd4bf;
+  --accent-cool-soft: rgba(45, 212, 191, 0.14);
+  --accent-cool-mid: rgba(45, 212, 191, 0.28);
+  --wash-warm: rgba(232, 106, 43, 0.09);
+  --wash-cool: rgba(45, 212, 191, 0.08);
+  --nav-bg: rgba(14, 17, 20, 0.9);
+  --hover-fill: rgba(214, 221, 227, 0.08);
+
+  --st-fault: #f87171;
+  --st-fault-text: #f87171;
+  --st-warn: #fbbf24;
+  --st-warn-text: #fbbf24;
+  --st-live: #60a5fa;
+  --st-live-text: #60a5fa;
+  --st-hashing: #4ade80;
+  --st-hashing-text: #4ade80;
+  --st-unknown: #8b95a0;
+  --st-unknown-text: #8b95a0;
+}
+
+@media (prefers-color-scheme: dark) {
+  html:not([data-theme="light"]):not([data-theme="dark"]) {
+    color-scheme: dark;
+    --bg: #0e1114;
+    --bg-elevated: #1c2329;
+    --surface: #151a1f;
+    --ink: #d6dde3;
+    --ink-soft: #b8c2ca;
+    --muted: #7a8792;
+    --faint: #556069;
+    --line: rgba(214, 221, 227, 0.1);
+    --line-strong: rgba(214, 221, 227, 0.16);
+    --border: #2a343c;
+    --border-subtle: #222a31;
+    --shadow: 0 1px 2px rgba(0, 0, 0, 0.35), 0 8px 24px rgba(0, 0, 0, 0.45);
+    --accent-warm: #E86A2B;
+    --accent-warm-soft: rgba(232, 106, 43, 0.18);
+    --accent-cool: #2dd4bf;
+    --accent-cool-soft: rgba(45, 212, 191, 0.14);
+    --accent-cool-mid: rgba(45, 212, 191, 0.28);
+    --wash-warm: rgba(232, 106, 43, 0.09);
+    --wash-cool: rgba(45, 212, 191, 0.08);
+    --nav-bg: rgba(14, 17, 20, 0.9);
+    --hover-fill: rgba(214, 221, 227, 0.08);
+    --st-fault: #f87171;
+    --st-fault-text: #f87171;
+    --st-warn: #fbbf24;
+    --st-warn-text: #fbbf24;
+    --st-live: #60a5fa;
+    --st-live-text: #60a5fa;
+    --st-hashing: #4ade80;
+    --st-hashing-text: #4ade80;
+    --st-unknown: #8b95a0;
+    --st-unknown-text: #8b95a0;
+  }
+}
